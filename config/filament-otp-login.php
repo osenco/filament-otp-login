@@ -8,5 +8,8 @@ return [
         'expires' => env('OTP_LOGIN_CODE_EXPIRES_SECONDS', 120),
     ],
 
+    // bigint, uuid or ulid
+    'user_id_type' => 'bigint',
+
     'notification_class' => \Afsakar\FilamentOtpLogin\Notifications\SendOtpCode::class,
 ];
